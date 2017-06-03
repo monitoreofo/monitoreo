@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoreo Fibra Optica</title>
+</head>
+
+<body>
+<div id="header">
+    <h2 style="text-align: center">Monitoreo Fibra Optica</h2>
+</div>
+
+
+
+<div id="content">
+    <div class="demo-container">
+        <div id="placeholder" style="margin:0 auto;"></div>
+        <br>
+        <div style="width:1000px;margin:0 auto;">
+            Actualizar: <input type="checkbox" id="myCheck" checked>
+            <br>
+            Time : <input type="number" id="interval" value="1000">
+            <br>
+            <label id="lblLast"></label>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="{% static 'vendor/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/plotly-latest.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/sensors.js' %}"> </script>
+
+</html>
